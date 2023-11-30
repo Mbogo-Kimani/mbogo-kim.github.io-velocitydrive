@@ -2,6 +2,10 @@
   * {
     scroll-behavior: smooth;
   }
+ media screen and (max-width: 768px) {
+    header {
+        padding: 10px; /* Adjust header padding for smaller screens */
+    }
 body {
   height: auto;
   overflow-y: auto;
