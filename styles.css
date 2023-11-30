@@ -1,0 +1,399 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+body {
+  height: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+header {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo img {
+  width: 200px; /* Adjust the width as needed */
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-list li {
+  margin: 0;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-list a:hover {
+  color: #FFD700; /* Change the hover color as needed */
+}
+
+
+header, section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+video {
+  opacity: 65%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  animation: fadeInUp 3s ease-out;
+}
+
+h1, h2, h3 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+h1{
+  font-size: 90px;
+}
+h1:hover{
+ -webkit-text-stroke: 2px #fff;
+ color: transparent;
+}
+
+p {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+} CSS code */
+
+/* Continue from previous CSS code */
+
+#fleet {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background: #f5f5f5; /* Change the background color as needed */
+}
+
+.car-gallery {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 0 -20px; /* Add negative margin to counteract padding on individual cards */
+}
+
+#fleet .car-card {
+  flex: 0 0 calc(33.33% - 40px); /* Set a width for each card, accounting for margins */
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  animation: fadeInLeft 1s ease-out;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+#fleet .car-card:hover {
+  transform: scale(1.1); /* Increase size on hover */
+}
+
+#fleet .car-card img {
+  width: 100%;
+  max-width: 100%; /* Ensure the image doesn't exceed the card width */
+  border-radius: 5px;
+}
+
+/* Additional styling for fleet section if needed */
+
+/* Additional animations for fleet section */
+@keyframes fadeInLeft {
+  from {
+      opacity: 0;
+      transform: translateX(-50%);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+/* Continue from previous CSS code */
+
+/* Continue from previous CSS code */
+
+#services {
+ 
+  background: #fff; 
+  padding: 40px 20px;
+}
+
+.service {
+  max-width: 1200px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.service h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Continue from previous CSS code */
+
+.service-item {
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+  margin-bottom: 20px; /* Add margin-bottom to separate service items */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Additional styling for services section if needed */
+
+
+.service-item:hover {
+  transform: scale(1.05); /* Increase size on hover */
+}
+
+.service-item img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 5px;
+}
+
+.service-item h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+/* Continue from previous CSS code */
+
+.subscribe-link {
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.subscribe-link:hover {
+  box-decoration-break: clone;
+  color: #FFD700; /* Change the hover color as needed */
+}
+/* Continue from previous CSS code */
+
+#subscribe {
+  background: #f5f5f5; /* Change the background color as needed */
+  padding: 40px 20px;
+  height: 300px; /* Set a fixed height for the subscribe section */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subscribe-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#subscribe h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscribe-form input {
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.subscribe-form button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #007BFF; /* Change the button color as needed */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.subscribe-form button:hover {
+  background-color: #0056b3; /* Change the hover color as needed */
+}
+
+/* Additional styling for subscribe section if needed */
+
+#request {
+  background: #f8f8f8; /* Change the background color as needed */
+  padding: 40px 20px;
+}
+
+.request-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#request h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.request-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.request-form label {
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.request-form input,
+.request-form select,
+.request-form textarea {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.request-form button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #007BFF; /* Change the button color as needed */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.request-form button:hover {
+  background-color: #0056b3; /* Change the hover color as needed */
+}
+#sixth{
+  padding-bottom: 80%;
+}
+/* Continue from previous CSS code */
+
+/* Continue from previous CSS code */
+
+footer {
+  background: #333; /* Change the background color as needed */
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-info,
+.company-details,
+.social-media {
+  flex: 1;
+}
+
+.contact-info h3,
+.company-details h3,
+.social-media h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.contact-info p,
+.company-details p,
+.social-media p {
+  margin-bottom: 5px;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons a {
+  margin-right: 10px;
+}
+
+/* Additional styling for footer section if needed */
+/* Continue from previous CSS code */
+
+/* Styling for social media icons */
+.social-icons img {
+  width: 40px; /* Adjust the width of the social media icons */
+  height: 40px; /* Adjust the height of the social media icons */
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;/* Make the social media icons circular */
+}
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+/* Additional styling for footer section if needed */
